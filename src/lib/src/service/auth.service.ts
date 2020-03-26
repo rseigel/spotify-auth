@@ -21,7 +21,8 @@ export class AuthService {
     scope: new ScopesBuilder().build()
   };
 
-  public authorize(){ 
+  public authorize(){
+    console.log('the fork worked');
     window.location.href = this.buildAuthUrl();
   }
 
